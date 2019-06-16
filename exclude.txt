@@ -1,0 +1,9 @@
+Makefile
+README.md
+LICENSE
+exclude.txt
+.gitignore
+.git/
+whispers/
+error/
+floorplan/
