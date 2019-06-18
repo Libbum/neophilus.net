@@ -7,6 +7,7 @@ body {
     overflow: hidden;
 }
 h2 {
+    margin: 0;
     color:transparent
 }
 #welcome:after {
@@ -49,21 +50,20 @@ a {
 }
 
 .container h2.info {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    animation: none;
+    position: absolute;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: toggle 10s;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
 .container h2.info span {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-left: -800px;
+    border: 1px dashed white;
     line-height: 30px;
     font-size: 30px;
-    width: 800px;
+    margin-bottom: 50px;
     -webkit-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
     -moz-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
     -ms-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
@@ -72,15 +72,19 @@ a {
     text-shadow: 0px 0px 1px #fff;
 }
 .container h2.info span:nth-child(2) {
-    top: 50%;
+    flex: 2 0 0;
+    margin: 0;
+}
+.container h2.info span:nth-child(3) {
     -webkit-animation-delay: 11s;
     -moz-animation-delay: 11s;
     -ms-animation-delay: 11s;
     animation-delay: 11s;
 }
-.container h2.info span:nth-child(3) {
-    top: 70%;
-    margin-left: -250px;
+.container h2.info span:nth-child(4) {
+    flex: 2 0 0;
+}
+.container h2.info span:nth-child(5) {
     text-align: right;
     -webkit-animation-delay: 13s;
     -moz-animation-delay: 13s;
@@ -108,6 +112,18 @@ a {
     -ms-transform: scale(5);
     transform: scale(5);
 }
+
+@keyframes toggle {
+         from {
+            visibility:hidden;
+         }
+     99% {
+            visibility:hidden;
+         }
+     to {
+            visibility:visible;
+      }
+ }
 
 @keyframes intro {
     0% {
@@ -140,6 +156,9 @@ a {
         opacity: 0;
         text-shadow: 0px 0px 50px #fff;
         -webkit-transform: scale(0);
+    }
+    85% {
+        display: none;
     }
 }
 @-webkit-keyframes blurFadeIn{
@@ -185,6 +204,9 @@ a {
         text-shadow: 0px 0px 50px #fff;
         -moz-transform: scale(0);
     }
+    85% {
+        display: none;
+    }
 }
 @-moz-keyframes blurFadeIn{
     0%{
@@ -228,6 +250,9 @@ a {
         opacity: 0;
         text-shadow: 0px 0px 50px #fff;
         transform: scale(0);
+    }
+    85% {
+        display: none;
     }
 }
 @keyframes blurFadeIn{
