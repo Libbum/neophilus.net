@@ -11,7 +11,7 @@ h2 {
 }
 #welcome:after {
     content: "";
-    animation: intro 7.5s ease-in;
+    animation: intro 12.5s ease-in;
 }
 
 a {
@@ -33,10 +33,10 @@ a {
     font-size: 100px;
     line-height: 100px;
     text-align: center;
-    -webkit-animation: blurFadeInOut 6s ease-in backwards;
-    -moz-animation: blurFadeInOut 6s ease-in backwards;
-    -ms-animation: blurFadeInOut 6s ease-in backwards;
-    animation: blurFadeInOut 6s ease-in backwards;
+    -webkit-animation: blurFadeInOut 10s ease-in backwards;
+    -moz-animation: blurFadeInOut 10s ease-in backwards;
+    -ms-animation: blurFadeInOut 10s ease-in backwards;
+    animation: blurFadeInOut 10s ease-in backwards;
 }
 
 .content {
@@ -48,7 +48,7 @@ a {
     justify-content: center;
 }
 
-.container h2.frame-5 {
+.container h2.info {
     -webkit-animation: none;
     -moz-animation: none;
     -ms-animation: none;
@@ -56,36 +56,36 @@ a {
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
-.container h2.frame-5 span {
+.container h2.info span {
     position: absolute;
-    top: -180%;
+    top: 20%;
     left: 50%;
     margin-left: -800px;
     line-height: 30px;
     font-size: 30px;
     width: 800px;
-    -webkit-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 12s backwards;
-    -moz-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 12s backwards;
-    -ms-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 12s backwards;
-    animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 12s backwards;
+    -webkit-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
+    -moz-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
+    -ms-animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
+    animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
-.container h2.frame-5 span:nth-child(2) {
+.container h2.info span:nth-child(2) {
     top: 50%;
-    -webkit-animation-delay: 14s;
-    -moz-animation-delay: 14s;
-    -ms-animation-delay: 14s;
-    animation-delay: 14s;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s;
 }
-.container h2.frame-5 span:nth-child(3) {
-    top: 260%;
+.container h2.info span:nth-child(3) {
+    top: 70%;
     margin-left: -250px;
     text-align: right;
-    -webkit-animation-delay: 15s;
-    -moz-animation-delay: 15s;
-    -ms-animation-delay: 15s;
-    animation-delay: 15s;
+    -webkit-animation-delay: 13s;
+    -moz-animation-delay: 13s;
+    -ms-animation-delay: 13s;
+    animation-delay: 13s;
 }
 .pyramid {
     position: absolute;
@@ -95,10 +95,10 @@ a {
     top: 50%;
     margin: -137px 0 0 500px;
     background: transparent url(pyramid.png) no-repeat top left;
-    -webkit-animation: fadeInBack 3.6s linear 14s backwards;
-    -moz-animation: fadeInBack 3.6s linear 14s backwards;
-    -ms-animation: fadeInBack 3.6s linear 14s backwards;
-    animation: fadeInBack 3.6s linear 14s backwards;
+    -webkit-animation: fadeInBack 3.6s linear 12s backwards;
+    -moz-animation: fadeInBack 3.6s linear 12s backwards;
+    -ms-animation: fadeInBack 3.6s linear 12s backwards;
+    animation: fadeInBack 3.6s linear 12s backwards;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     filter: alpha(opacity=30);
     opacity: 0.3;
@@ -113,13 +113,13 @@ a {
     0% {
         content:"Welcome to the tribe.";
     }
-    27% {
+    28% {
         content:"We want to recruit you,";
     }
-    49% {
+    47% {
         content:"because you're so gullible.";
     }
-    65% {
+    66% {
         content:"That is, gullible in the right way.";
     }
 }
