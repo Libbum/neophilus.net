@@ -8,6 +8,10 @@ body {
     font-family: 'BebasNeueRegular';
 }
 
+.paragraph, .attribution, .attribution a, nav, .link {
+    animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
+}
+
 nav {
     font-family: 'Fira Sans Condensed';
     line-height: 20px;
@@ -81,10 +85,6 @@ h2 {
 
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
-}
-
-.paragraph, .attribution, .attribution a, nav, .link {
-    animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
 }
 
 .container div:nth-child(3) {
