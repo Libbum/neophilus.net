@@ -8,6 +8,20 @@ body {
     font-family: 'BebasNeueRegular';
 }
 
+nav {
+    font-family: 'Fira Sans Condensed';
+    line-height: 20px;
+    font-size: 20px;
+    animation-delay: 15s;
+    z-index: 4;
+}
+
+nav a {
+    color: rgb(40, 110, 156);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 a {
     text-decoration: none;
     color: #ccc;
@@ -69,14 +83,14 @@ h2 {
     text-shadow: 0px 0px 1px #fff;
 }
 
-.paragraph, .attribution {
+.paragraph, .attribution, .attribution a, nav, .link {
     animation: blurFadeIn 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 10s backwards;
 }
 
 .container div:nth-child(3) {
     animation-delay: 11s;
 }
-.container div:nth-child(7) {
+.container div:nth-child(7), .attribution a {
     animation-delay: 13s;
 }
 
@@ -95,12 +109,14 @@ h2 {
 }
 
 .attribution {
+    z-index: 3;
     text-align: right;
     align-content: flex-end;
 }
 
 .pyramid {
     position: fixed;
+    z-index: -2;
     width: 282px;
     height: 273px;
     left: 50%;
@@ -112,6 +128,26 @@ h2 {
     filter: alpha(opacity=30);
     opacity: 0.3;
     transform: scale(5);
+}
+
+.icon {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(13%) saturate(3354%) hue-rotate(164deg) brightness(92%) contrast(79%);
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.link {
+    display: table-caption;
+    vertical-align: middle;
+    animation-delay: 15s;
+}
+
+.link:hover, .link:active {
+    color: rgb(57, 159, 226);
+}
+
+.link:hover .icon, .link:active .icon {
+    filter: brightness(0) saturate(100%) invert(73%) sepia(55%) saturate(5228%) hue-rotate(177deg) brightness(94%) contrast(87%);
 }
 
 @keyframes intro {
