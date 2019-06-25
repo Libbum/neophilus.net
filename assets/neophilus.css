@@ -40,8 +40,6 @@ nav {
 
 nav a {
     color: rgb(40, 110, 156);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
 }
 
 a {
@@ -151,12 +149,15 @@ h2 {
 .icon {
     filter: brightness(0) saturate(100%) invert(37%) sepia(13%) saturate(3354%) hue-rotate(164deg) brightness(92%) contrast(79%);
     width: 50px;
-    margin-bottom: 5px;
+    margin: 5px auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .link {
-    display: table-caption;
-    vertical-align: middle;
+    display: inline-grid;
+    width: 95px;
+    vertical-align: top;
     animation-delay: 15s;
 }
 
